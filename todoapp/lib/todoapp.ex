@@ -46,11 +46,12 @@ defmodule Todoapp do
     else
       IO.write("Enter task number to be removed: ")
 
-      case Integer.parse(IO.gets("")) do
+      case Integer.parse(String.trim(IO.gets(""))) do
         {task_number, ""} when task_number in 1..length(todos) ->
+          # IO.inspect(task_number)
+         updated =  List.delete_at(todos, task_number - 1)
           IO.puts("Task removed successfully")
-          List.delete_at(todos, task_number - 1)
-
+          # remove_task(updated)
         _ ->
           IO.puts("Invalid task number")
           todos
