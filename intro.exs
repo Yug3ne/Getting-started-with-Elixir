@@ -15,3 +15,7 @@ IO.puts("Hello world")
 # data types in elixir - intergers(1245), floats->acts as a double(1.2)->64 bit, strings("inserted with double quotese" ->utf-8 encoded), Booleans(true,false), tuples({1,"hello", :atom, false}), atoms(:atom), Lists,implemented as linked links([1,2,3,4]->first item is the head and the rest are tail), maps-key value structures(%{key: "value"})
 
 # String functions - length, upcase,downcase,trim,split
+
+# Struct - map like data structure
+
+# Functions - anonymous functions, named functions def - public defp private
